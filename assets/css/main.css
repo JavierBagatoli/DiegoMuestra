@@ -2041,7 +2041,10 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 480px) {
-
+			#main {
+				padding-top: 0px;
+			}
+			
 			#main .thumb {
 				-moz-transition-delay: 1.175s;
 				-webkit-transition-delay: 1.175s;
@@ -2089,4 +2092,39 @@ input, select, textarea {
 .actual-page{
 	color:#287e6d !important
 }
-	
+
+#myTopnav .iconMenu {
+	display: none;
+  }
+
+@media screen and (max-width: 600px) {
+	#myTopnav li:not(:last-child){
+		display: none !important;
+	}
+
+	#myTopnav li a.iconMenu {
+	  float: right;
+	  display: block;
+	}
+
+	#myTopnav.responsive {position: relative !important;}
+	#myTopnav.responsive  li a.iconMenu {
+		position: absolute;
+		right: 0;
+		top: 0;
+	  }
+	#myTopnav.responsive li{
+		float: none !important;
+		display: block !important;
+		text-align: left !important;
+	}
+
+	.responsive{
+		background-color: #1f2224;
+	}
+
+	#main .comissions{
+		margin-left: 0px;
+		width: 100%;
+	}
+}
